@@ -1,0 +1,504 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.site {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-areas: "nav"
+                            "header"
+                            "blok1"
+                            "blok2"
+                            "blok3"
+                            "footer";
+    }
+
+a {
+    color: #7F9800;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #DD0000;
+}
+
+p {
+    font-family: 'Hind', sans-serif;
+    color: #777777;
+    text-align: center;
+}
+
+h2 {
+    color:#7F9800;
+    font-weight: lighter;
+    text-align: center;
+} 
+
+h3 {
+    color: white;
+    font-weight:600;
+    text-align: center;
+    padding-top: 10px;
+} 
+
+.logo-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+    grid-area: nav;
+}    
+
+.logocontainer{
+    align-self: center;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 25px;
+    color: #7F9800;
+    padding: 0px 30px 0 0px;
+}
+
+.menu {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header-image {
+    grid-row: 2 / 3;
+    background-image: url(images/header_image_homepage.png);
+    height:500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    overflow: hidden;
+}
+ 
+.contactheader {
+    background-image: url(images/gras-header.png);
+}
+
+.praktischheader {
+    background-image: url(images/naamloos-2643.jpg);
+}
+
+.coachingheader {
+    background-image: url(images/header-bank.png);
+}
+
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    padding: 0px 40px;
+  }
+
+hr {
+    border-top: 2px solid white;
+    border-radius: 3px;
+    width:60%;
+    }
+
+p.text-under-h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.buttonlink {
+    background-color: #dd0000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-color: white;
+    border-style: solid;
+    border-radius:30px;
+    text-shadow: none;
+}
+
+.buttonlink:hover {
+    color: white;
+    background-color: #7F9800;
+}
+
+.keuzestress {
+    margin: 20px;
+    border: 1px solid #7F9800;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-area: blok1;
+}
+
+.underline-op-wit {
+    border: 1px solid #7F9800;
+    width: 60%;
+}
+           
+a.buttonlink-op-wit{
+    background-color:white;
+    color: #7F9800;
+    font-size: 16px;
+    border:  1px solid  #7F9800 ;
+    border-radius:30px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    padding: 7px 7px;
+}
+
+a.buttonlink-op-wit:hover {
+    background-color:#7F9800;
+    color: white;
+    box-shadow: none;
+}
+  
+.image-section {
+    margin: 0 20px;
+    background-image: url(images/image-area.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    background-position: center; 
+    grid-area: blok2;
+  }
+
+p.text-over-image {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    line-height: 50px;
+}
+
+.groepstraining {
+    margin: 20px;
+    border: 1px solid #7F9800;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-area: blok3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px 0;
+    grid-area: footer; 
+}
+
+footer a  {
+        color: white;
+        text-decoration: none;   
+        
+}
+
+.praktisch {
+    display: grid;
+    grid-template-areas: "nav"
+                        "header"
+                        "blok1"
+                        "groenblok"
+                        "blok3"
+                        "footer";
+    }
+
+.groen-blok{
+    background-color: #6b8002;
+    margin: 0 20px;
+    padding: 40px 20px;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-area: groenblok;
+}
+
+.h2-wit {
+    color:white;
+    font-weight: lighter;
+    text-align: center;
+} 
+
+.underline-op-groen {
+    border: 1px solid white;
+    width: 60%;
+}
+
+.ptext-op-groen {
+    color: white;
+    margin: 0 0 5px 0;
+}
+
+.coaching {
+    display: grid;
+    grid-template-areas: "nav"
+                        "header"
+                        "blok1"
+                        "groenblok"
+                        "blok3"
+                        "footer";
+}
+
+.buttonlink-op-groen {
+    background-color:white;
+    color: #7F9800;
+    font-size: 16px;
+    border:  1px solid  #7F9800 ;
+    border-radius:30px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    padding: 7px 7px;
+}
+
+a.buttonlink-op-groen:hover {
+    background-color: #7F9800;
+    border: 1px solid white;
+    color: white;
+    box-shadow: none;
+}
+
+.contact {
+        display: grid;
+        grid-template-areas: "nav"
+                            "header"
+                            "blok1"
+                            "blok2"
+                            "blok3"
+                            "footer";
+}
+
+label {
+    line-height: 30px;
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: 'Hind', sans-serif;
+    color: #777777;
+}
+
+.radio  {
+    width: 20px;
+}
+
+input.button-op-wit {
+    background-color:#7F9800;
+    color: white;
+    font-size: 16px;
+    border:  1px solid  #7F9800 ;
+    border-radius:30px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 10px auto;
+    padding: 7px 7px;
+}
+
+input.button-op-wit:hover {
+    background-color:white;
+    color: #7F9800;
+    box-shadow: none;
+}
+
+
+
+/* CSS MEDIA QUERY TABLET*/
+
+@media (min-width: 720px) {
+    .site {
+        height: 100%;
+        display: grid;
+        grid-template-areas: "nav nav"
+                            "header header"
+                            "blok1 blok3"
+                            "blok2 blok2"
+                            "footer footer";
+    }
+
+    .logo-nav-container {
+        margin: 30px 0px;
+    }  
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu {
+        padding: 0px 15px;
+    }
+
+    .coaching {
+        height: 100%;
+        display: grid;
+        grid-template-areas: "nav nav"
+                            "header header"
+                            "blok1 blok3"
+                            "groenblok groenblok"
+                            "footer footer";
+    }
+
+    .praktisch {
+        height: 100%;
+        display: grid;
+        grid-template-areas: "nav nav"
+                            "header header"
+                            "blok1 blok3"
+                            "groenblok groenblok"
+                            "footer footer";
+    }
+
+    .contact {
+        height: 100%;
+        display: grid;
+        grid-template-areas: "nav nav"
+                            "header header"
+                            "blok1 blok3"
+                            "blok2 blok2"
+                            "footer footer";
+    }
+
+    header {
+    grid-area: header;
+    }
+
+    .keuzestress {
+        margin: 20px 10px 20px 20px;
+    }
+
+    .groepstraining {
+        margin: 20px 20px 20px 10px;
+    }
+
+    .image-section{
+        margin: 0px;
+    }
+
+    .groen-blok{
+        margin: 0px;
+        padding: 40px 20px;
+    }
+
+    footer {
+        height: 100px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+
+/* CSS MEDIA QUERY DESKTOP*/
+
+@media (min-width: 1080px) {
+    .site {
+        height: 100%;
+        display: grid;
+        grid-template-areas: "nav nav nav"
+                            "header header header"
+                            "blok1 blok2 blok3"
+                            "footer footer footer";
+    }
+
+    .logo-nav-container {
+        margin: 40px 0px;
+    }  
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu {
+        padding: 0px 30px;
+    }
+
+    .coaching {
+        height: 100%;
+        display: grid;
+        grid-template-areas: "nav nav nav"
+                            "header header header"
+                            "blok1 groenblok blok3"
+                            "footer footer footer";
+        
+    }
+
+    .praktisch {
+        height: 100%;
+        display: grid;
+        grid-template-areas: "nav nav nav"
+                            "header header header"
+                            "blok1 groenblok blok3"
+                            "footer footer footer";
+    }
+
+    .contact {
+        height: 100%;
+        display: grid;
+        grid-template-areas: "nav nav nav"
+                            "header header header"
+                            "blok1 blok2 blok3"
+                            "footer footer footer";
+    }
+
+    header {
+    grid-area: header;
+    }
+
+    .image-section{
+        margin: 20px 0px;
+        height: auto;
+    }
+
+    .groen-blok{
+        margin: 20px 0px;
+        height: auto;
+    }
+
+    footer {
+        height: 100px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
